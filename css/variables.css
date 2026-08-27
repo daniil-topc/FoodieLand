@@ -1,0 +1,56 @@
+:root {
+  /* Шрифты */
+  --font-family-primary: "Inter", sans-serif;
+
+  /* Основные цвета */
+  --color-primary: #e7fafe;
+  --color-primary-soft: #e7f9fd;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark: #333333;
+  --color-gray: #707070;
+
+  /* Текст */
+  --color-text-primary: #000000;
+  --color-text-secondary: rgba(0, 0, 0, 0.6);
+  --color-text-muted: rgba(0, 0, 0, 0.65);
+  --color-text-inverse: #ffffff;
+
+  /* Фирменный акцент */
+  --color-accent: #ff0000;
+
+  /* Фоны элементов */
+  --color-surface: #ffffff;
+  --color-surface-blue: #e7fafe;
+  --color-surface-blue-soft: #e7f9fd;
+  --color-chip-background: rgba(0, 0, 0, 0.05);
+
+  /* Границы и разделители */
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-divider: rgba(0, 0, 0, 0.2);
+
+  /* Категории */
+  --color-category-neutral: rgba(0, 0, 0, 0.1);
+  --color-category-breakfast: rgba(112, 130, 70, 0.15);
+  --color-category-vegan: rgba(108, 198, 63, 0.15);
+  --color-category-meat: rgba(204, 38, 27, 0.15);
+  --color-category-dessert: rgba(240, 158, 0, 0.15);
+
+  /* Состояния форм */
+  --color-form-success: #dddddd;
+  --color-form-error: #ffdddd;
+
+  /* Тени */
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-medium: rgba(0, 0, 0, 0.2);
+
+  /* Градиенты макета */
+  --gradient-recipe-card: linear-gradient(180deg, #ffffff 0%, #e7f9fd 100%);
+
+  --gradient-blue-fade: linear-gradient(
+    180deg,
+    rgba(231, 249, 253, 0) 0%,
+    #e7f9fd 100%
+  );
+}

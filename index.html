@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/pages/home.css" />
+  <title>Foodieland</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img
+          src="./images/logo/Foodieland-logo.svg"
+          alt="Foodieland"
+          width="108"
+          height="19"
+        />
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li>
+            <a class="header-nav-link" href="#">Home</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#">Recipes</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#">About us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-soc1als">
+        <a
+          class="header-soc1als-link"
+          href="#"
+          aria-label="Facebook"
+        >
+          <img
+            src="./images/icons/facebook.svg"
+            alt=""
+            width="22"
+            height="18"
+          />
+        </a>
+
+        <a
+          class="header-soc1als-link"
+          href="#"
+          aria-label="Twitter"
+        >
+          <img
+            src="./images/icons/twitter.svg"
+            alt=""
+            width="22"
+            height="18"
+          />
+        </a>
+
+        <a
+          class="header-soc1als-link"
+          href="#"
+          aria-label="Instagram"
+        >
+          <img
+            src="./images/icons/instagram.svg"
+            alt=""
+            width="22"
+            height="18"
+          />
+        </a>
+      </div>
+      <button
+        class="header-burger"
+        type="button"
+        aria-label="Open Menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="dropdown-menu"
+        id="site-dropdown-menu"
+        aria-label="Additional navigation"
+        data-js-dropdown-menu
+      >
+        <ul class="dropdown-menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<script src="./js/burger-menu.js"></script>
+</body>
+</html>

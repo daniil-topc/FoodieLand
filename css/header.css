@@ -1,0 +1,155 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-inline: 80px;
+  padding-block: 40px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.header-logo {
+  justify-self: start;
+}
+
+.header-nav {
+  justify-self: center;
+}
+
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.header-soc1als {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 40px;
+}
+
+.header-burger {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+
+}
+
+.dropdown-menu.is-active {
+  display: block;
+
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+
+  width: 100%;
+  padding-block: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: 0 10px 30px var(--color-shadow-light);
+}
+
+.dropdown-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdown-menu-list a {
+  color: var(--color-black);
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+
+.header-nav-link {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1120px) {
+  .header {
+    padding-inline: 40px;
+  }
+
+  .header-nav-list {
+    column-gap: 30px;
+  }
+
+  .header-soc1als {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 765px) {
+  .header {
+    padding: 25px 20px;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav,
+  .header-soc1als {
+    display: none;
+  }
+
+  .header-burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    border-radius: 6px;
+
+    background-color: transparent;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .header-burger span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-black);
+  }
+}
+
+@media (hover: hover) {
+  .header-nav-link:hover {
+    color: var(--color-gray);
+  }
+
+  .header-burger:hover {
+    background-color: var(--color-border);
+  }
+}
+
+@media (hover: none) {
+  .header-nav-link:active {
+    color: var(--color-gray);
+  }
+
+  .header-burger:active {
+    background-color: var(--color-border);
+  }
+}
+
+
