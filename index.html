@@ -10,111 +10,231 @@
     http-equiv="X-UA-Compatible"
     content="ie=edge"
   >
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/font.css" />
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/pages/home.css" />
+  <link
+    rel="stylesheet"
+    href="./css/normalize.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/font.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/variables.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/global.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/header.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/footer.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/pages/home.css"
+  />
   <title>Foodieland</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <a class="header-logo" href="./index.html">
+<header class="header">
+  <div class="header-inner">
+    <a
+      class="header-logo"
+      href="./index.html"
+    >
+      <img
+        src="./images/logo/Foodieland-logo.svg"
+        alt="Foodieland"
+        width="108"
+        height="19"
+      />
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li>
+          <a
+            class="header-nav-link"
+            href="#"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="#"
+          >Recipes
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./blog.html"
+          >Blog
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./contact.html"
+          >Contact
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="#"
+          >About us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-soc1als">
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Facebook"
+      >
         <img
-          src="./images/logo/Foodieland-logo.svg"
-          alt="Foodieland"
-          width="108"
-          height="19"
+          src="./images/icons/facebook.svg"
+          alt=""
+          width="22"
+          height="18"
         />
       </a>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li>
-            <a class="header-nav-link" href="#">Home</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#">Recipes</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="./contact.html">Contact</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#">About us</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-soc1als">
-        <a
-          class="header-soc1als-link"
-          href="#"
-          aria-label="Facebook"
-        >
-          <img
-            src="./images/icons/facebook.svg"
-            alt=""
-            width="22"
-            height="18"
-          />
-        </a>
 
-        <a
-          class="header-soc1als-link"
-          href="#"
-          aria-label="Twitter"
-        >
-          <img
-            src="./images/icons/twitter.svg"
-            alt=""
-            width="22"
-            height="18"
-          />
-        </a>
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Twitter"
+      >
+        <img
+          src="./images/icons/twitter.svg"
+          alt=""
+          width="22"
+          height="18"
+        />
+      </a>
 
-        <a
-          class="header-soc1als-link"
-          href="#"
-          aria-label="Instagram"
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Instagram"
+      >
+        <img
+          src="./images/icons/instagram.svg"
+          alt=""
+          width="22"
+          height="18"
+        />
+      </a>
+    </div>
+    <button
+      class="header-burger"
+      type="button"
+      aria-label="Open Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Additional navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Recipes</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <section class="hero container">
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        <img
+          src="./images/icons/scroll.svg"
+          alt=""
         >
+        <span>Hot Recipes</span>
+      </div>
+
+      <h1 class="hero-title">
+        Spicy delicious chicken wings
+      </h1>
+
+      <p class="hero-description">
+        Lorem ipsum dolor sit amet, consectetuipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua enim ad minim
+      </p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <img src="./images/icons/timer.svg" alt="" />
+          <span>30 Minutes</span>
+        </div>
+
+        <div class="hero-meta-item">
+          <img src="./images/icons/fork-knife.svg" alt="" />
+          <span>Chicken</span>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <div class="hero-author">
           <img
-            src="./images/icons/instagram.svg"
-            alt=""
-            width="22"
-            height="18"
+            class="hero-author-image"
+            src="./images/icons/author.jpg"
+            alt="John Smith"
+            width="50"
+            height="50"
           />
+
+          <div class="author-info">
+            <span class="author-name">John Smith</span>
+            <time datetime="2022-03-15">15 March 2022</time>
+          </div>
+
+        </div>
+
+        <a class="hero-button" href="#">
+          <span>View Recipes</span>
+          <img src="./images/icons/play.svg" alt="" />
         </a>
       </div>
-      <button
-        class="header-burger"
-        type="button"
-        aria-label="Open Menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav
-        class="dropdown-menu"
-        id="site-dropdown-menu"
-        aria-label="Additional navigation"
-        data-js-dropdown-menu
-      >
-        <ul class="dropdown-menu-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+    <div class="hero-image-wrapper">
+      <img
+        class="hero-image"
+        src="./images/logo/chicken-wings.jpg"
+        alt="Spicy chicken wings"
+      />
+    </div>
+  </section>
+</main>
 <script src="./js/burger-menu.js"></script>
 </body>
 </html>

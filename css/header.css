@@ -5,6 +5,7 @@
   padding-inline: 80px;
   padding-block: 40px;
   border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-white);
 }
 
 .header-inner {
