@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 32px;
 }
 
 .hero {
@@ -116,6 +117,81 @@
   color: var(--color-white);
 }
 
+.categories {
+  padding-block: 160px;
+}
+
+.categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories-title {
+  font-size: clamp(2rem, 1.667rem + 1.48vw, 3rem);
+}
+
+.categories-btn {
+  background-color: var(--color-surface-blue);
+  padding-block: 20px;
+  padding-inline: 27px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.categories-btn span {
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.categories-footer {
+  padding-top: 80px;
+}
+
+.categories-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.categories-item {
+  padding-inline: 40px;
+  border-radius: 16px;
+}
+
+.categories-item:nth-child(1) {
+  background: var(--bg-category-breakfast);
+}
+
+.categories-item:nth-child(2) {
+  background: var(--bg-category-vegan);
+}
+
+.categories-item:nth-child(3) {
+  background: var(--bg-category-meat);
+}
+
+.categories-item:nth-child(4) {
+  background: var(--bg-category-dessert);
+}
+
+.categories-item:nth-child(5) {
+  background: var(--bg-category-lunch);
+}
+
+.categories-item:nth-child(6) {
+  background: var(--bg-category-chocolate);
+}
+
+.categories-item-title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 1120px) {
 
   .hero-content {
@@ -162,14 +238,40 @@
   }
 }
 
+@media (max-width: 768px) {
+  .categories {
+    padding-block: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .categories-list {
+    justify-content: center;
+  }
+}
+
 @media (hover: hover) {
   .hero-button:hover {
+    transform: scale(1.1);
+  }
+
+  .categories-btn:hover {
     transform: scale(1.1);
   }
 }
 
 @media (hover:none) {
   .hero-button:active {
+    transform: scale(1.1);
+  }
+
+  .categories-btn:active {
     transform: scale(1.1);
   }
 }

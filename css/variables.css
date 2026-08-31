@@ -30,12 +30,13 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-divider: rgba(0, 0, 0, 0.2);
 
-  /* Категории */
-  --color-category-neutral: rgba(0, 0, 0, 0.1);
-  --color-category-breakfast: rgba(112, 130, 70, 0.15);
-  --color-category-vegan: rgba(108, 198, 63, 0.15);
-  --color-category-meat: rgba(204, 38, 27, 0.15);
-  --color-category-dessert: rgba(240, 158, 0, 0.15);
+  /* Градиенты категорий */
+  --bg-category-breakfast: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.04) 100%);
+  --bg-category-vegan:     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+  --bg-category-meat:      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(204, 38, 27, 0.08) 100%);
+  --bg-category-dessert:   linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+  --bg-category-lunch:     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(222, 134, 38, 0.1) 100%);
+  --bg-category-chocolate: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
 
   /* Состояния форм */
   --color-form-success: #dddddd;
