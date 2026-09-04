@@ -1,6 +1,7 @@
 :root {
   /* Шрифты */
   --font-family-primary: "Inter", sans-serif;
+  --font-family-secondary: "Lobster", sans-serif;
 
   /* Основные цвета */
   --color-primary: #e7fafe;
