@@ -382,10 +382,6 @@
     transform: scale(1.1);
   }
 
-  .recipes-item:hover {
-    transform: scale(1.02);
-    box-shadow: var(--color-shadow-medium);
-  }
 }
 
 @media (hover:none) {
@@ -397,8 +393,4 @@
     transform: scale(1.1);
   }
 
-  .recipes-item:active {
-    transform: scale(1.02);
-
-  }
 }
