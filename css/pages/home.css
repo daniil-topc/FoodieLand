@@ -296,6 +296,102 @@
   padding-bottom: 32px;
 }
 
+.chef-section {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.chef-section-content {
+  min-height: 597px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(520px, 1fr);
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 45%, #e7f9fd 100%);
+  border-radius: 30px;
+}
+
+.chef-section-copy {
+  max-width: 540px;
+  padding: 64px 40px 64px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.chef-section-title {
+  margin: 0;
+  font-size: clamp(2.25rem, 1.625rem + 2.78vw, 4rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.chef-section-description {
+  max-width: 500px;
+  margin: 24px 0 48px;
+  color: var(--color-gray);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.chef-section-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 52px;
+  padding-block: 21px;
+  border-radius: 20px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.chef-section-visual {
+  align-self: stretch;
+  position: relative;
+  min-height: 597px;
+}
+
+.chef-section-chef {
+  position: absolute;
+  z-index: 1;
+  right: 2%;
+  bottom: -1px;
+  width: min(100%, 660px);
+  height: auto;
+}
+
+.chef-section-ingredient {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+}
+
+.chef-section-ingredient--meat {
+  top: 11%;
+  left: 12%;
+  width: 65px;
+}
+
+.chef-section-ingredient--vegetable {
+  top: 24%;
+  right: 5%;
+  width: 70px;
+}
+
+.chef-section-ingredient--onion {
+  top: 13%;
+  right: 32%;
+  width: 48px;
+}
+
+.chef-section-ingredient--tomato {
+  bottom: 19%;
+  left: 1%;
+  width: 48px;
+}
+
 @media (max-width: 1120px) {
 
   .hero-content {
@@ -304,6 +400,10 @@
 
   .hero-footer {
     gap: 15px;
+  }
+
+  .chef-section-content {
+    grid-template-columns: minmax(0, 0.9fr) minmax(440px, 1.1fr);
   }
 }
 
@@ -344,6 +444,45 @@
   .recipes-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .chef-section {
+    padding-top: 100px;
+  }
+
+  .chef-section-content {
+    grid-template-columns: 1fr;
+  }
+
+  .chef-section-copy {
+    max-width: 640px;
+    padding: 64px 40px 16px;
+  }
+
+  .chef-section-visual {
+    min-height: 520px;
+  }
+
+  .chef-section-chef {
+    right: 50%;
+    width: 620px;
+    transform: translateX(50%);
+  }
+
+  .chef-section-ingredient--meat {
+    left: calc(50% - 265px);
+  }
+
+  .chef-section-ingredient--vegetable {
+    right: calc(50% - 275px);
+  }
+
+  .chef-section-ingredient--onion {
+    right: calc(50% - 100px);
+  }
+
+  .chef-section-ingredient--tomato {
+    left: calc(50% - 270px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -354,6 +493,38 @@
   .recipes-grid {
     grid-template-columns: 1fr;
     align-items: center;
+  }
+
+  .chef-section-copy {
+    padding: 48px 24px 16px;
+  }
+
+  .chef-section-visual {
+    min-height: 400px;
+  }
+
+  .chef-section-chef {
+    width: 490px;
+  }
+
+  .chef-section-ingredient--meat {
+    left: calc(50% - 210px);
+    width: 52px;
+  }
+
+  .chef-section-ingredient--vegetable {
+    right: calc(50% - 215px);
+    width: 55px;
+  }
+
+  .chef-section-ingredient--onion {
+    right: calc(50% - 82px);
+    width: 38px;
+  }
+
+  .chef-section-ingredient--tomato {
+    left: calc(50% - 215px);
+    width: 38px;
   }
 }
 
@@ -371,6 +542,46 @@
     gap: 50px;
     justify-content: center;
   }
+
+  .chef-section {
+    padding: 72px 16px;
+  }
+
+  .chef-section-copy {
+    padding: 40px 24px 8px;
+  }
+
+  .chef-section-description {
+    margin-bottom: 32px;
+  }
+
+  .chef-section-visual {
+    min-height: 300px;
+  }
+
+  .chef-section-chef {
+    width: 370px;
+  }
+
+  .chef-section-ingredient--meat {
+    left: calc(50% - 160px);
+    width: 40px;
+  }
+
+  .chef-section-ingredient--vegetable {
+    right: calc(50% - 165px);
+    width: 42px;
+  }
+
+  .chef-section-ingredient--onion {
+    right: calc(50% - 62px);
+    width: 30px;
+  }
+
+  .chef-section-ingredient--tomato {
+    left: calc(50% - 165px);
+    width: 30px;
+  }
 }
 
 @media (hover: hover) {
@@ -382,6 +593,11 @@
     transform: scale(1.1);
   }
 
+  .chef-section-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-dark);
+  }
+
 }
 
 @media (hover:none) {
@@ -391,6 +607,10 @@
 
   .categories-btn:active {
     transform: scale(1.1);
+  }
+
+  .chef-section-button:active {
+    transform: translateY(-1px);
   }
 
 }
