@@ -214,7 +214,7 @@
       </div>
 
       <div class="hero-footer">
-        <div class="hero-author">
+        <a class="hero-author" href="#recipes" aria-label="View John Smith's recipes">
           <img
             class="hero-author-image"
             src="./images/icons/author.jpg"
@@ -228,7 +228,7 @@
             <time datetime="2022-03-15">15 March 2022</time>
           </div>
 
-        </div>
+        </a>
 
         <a
           class="hero-button"
@@ -264,52 +264,46 @@
     </div>
     <div class="categories-footer">
       <ul class="categories-list">
-        <li class="categories-item ">
-          <img
-            src="./images/icons/rice-icon.svg"
-            alt="rice icon"
-          >
-          <h3 class="categories-item-title">Breakfast</h3>
+        <li class="categories-item">
+          <a class="categories-item-link" href="#recipes" aria-label="View breakfast recipes">
+            <img src="./images/icons/rice-icon.svg" alt="">
+            <h3 class="categories-item-title">Breakfast</h3>
+          </a>
         </li>
         <li class="categories-item">
-          <img
-            src="./images/icons/greens-icon.svg"
-            alt="Vegetables"
-          >
-          <h3 class="categories-item-title">Vegan</h3>
+          <a class="categories-item-link" href="#recipes" aria-label="View vegan recipes">
+            <img src="./images/icons/greens-icon.svg" alt="">
+            <h3 class="categories-item-title">Vegan</h3>
+          </a>
         </li>
         <li class="categories-item">
-          <img
-            src="./images/icons/meat-icon.svg"
-            alt="Meat"
-          >
-          <h3 class="categories-item-title">Meat</h3>
+          <a class="categories-item-link" href="#recipes" aria-label="View meat recipes">
+            <img src="./images/icons/meat-icon.svg" alt="">
+            <h3 class="categories-item-title">Meat</h3>
+          </a>
         </li>
         <li class="categories-item">
-          <img
-            src="./images/icons/dessert-icon.svg"
-            alt="Dessert"
-          >
-          <h3 class="categories-item-title">Dessert</h3>
+          <a class="categories-item-link" href="#recipes" aria-label="View dessert recipes">
+            <img src="./images/icons/dessert-icon.svg" alt="">
+            <h3 class="categories-item-title">Dessert</h3>
+          </a>
         </li>
         <li class="categories-item">
-          <img
-            src="./images/icons/lunch-icon.svg"
-            alt="lunch"
-          >
-          <h3 class="categories-item-title">Lunch</h3>
+          <a class="categories-item-link" href="#recipes" aria-label="View lunch recipes">
+            <img src="./images/icons/lunch-icon.svg" alt="">
+            <h3 class="categories-item-title">Lunch</h3>
+          </a>
         </li>
         <li class="categories-item">
-          <img
-            src="./images/icons/chocolate-item.svg"
-            alt="Chocolate"
-          >
-          <h3 class="categories-item-title">Chocolate</h3>
+          <a class="categories-item-link" href="#recipes" aria-label="View chocolate recipes">
+            <img src="./images/icons/chocolate-item.svg" alt="">
+            <h3 class="categories-item-title">Chocolate</h3>
+          </a>
         </li>
       </ul>
     </div>
   </section>
-  <section class="recipes container">
+  <section id="recipes" class="recipes container">
     <div class="recipes-header">
       <h2 class="recipes-title">
         Simple and tasty recipes
@@ -325,11 +319,9 @@
     <div class="recipes-grid">
       <article class="recipes-item" data-id="wagyu-burger">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/wagyu-burger.jpg"
-            alt="Big and Juicy Wagyu Beef Cheeseburger"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Big and Juicy Wagyu Beef Cheeseburger recipe">
+            <img class="recipes-item-image" src="./images/recipes/wagyu-burger.jpg" alt="Big and Juicy Wagyu Beef Cheeseburger">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -366,11 +358,9 @@
 
       <article class="recipes-item" data-id="lime-salmon">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/fresh-lime-roasted-salmon.jpg"
-            alt="Fresh lime roasted salmon steak with rosemary and lemon slices"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Fresh Lime Roasted Salmon with Ginger Sauce recipe">
+            <img class="recipes-item-image" src="./images/recipes/fresh-lime-roasted-salmon.jpg" alt="Fresh lime roasted salmon steak with rosemary and lemon slices">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -407,11 +397,9 @@
 
       <article class="recipes-item" data-id="strawberry-pancake">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/pancake.jpg"
-            alt="Pancake"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Strawberry Oatmeal Pancake with Honey Syrup recipe">
+            <img class="recipes-item-image" src="./images/recipes/pancake.jpg" alt="Pancake">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -448,11 +436,9 @@
 
       <article class="recipes-item" data-id="mixed-mayonnaise-salad">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/salad.jpg"
-            alt="Salad"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Fresh and Healthy Mixed Mayonnaise Salad recipe">
+            <img class="recipes-item-image" src="./images/recipes/salad.jpg" alt="Salad">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -489,11 +475,9 @@
 
       <article class="recipes-item" data-id="chicken-meatballs">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/meatballs.jpg"
-            alt="Meatballs"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Chicken Meatballs with Cream Cheese recipe">
+            <img class="recipes-item-image" src="./images/recipes/meatballs.jpg" alt="Meatballs">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -550,11 +534,9 @@
 
       <article class="recipes-item" data-id="fruity-pancake">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/pancake-orange.jpg"
-            alt="Fruity pancake with orange and blueberry"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View Fruity Pancake with Orange and Blueberry recipe">
+            <img class="recipes-item-image" src="./images/recipes/pancake-orange.jpg" alt="Fruity pancake with orange and blueberry">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -591,11 +573,9 @@
 
       <article class="recipes-item" data-id="chicken-rice">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/chicken-rice.jpg"
-            alt="Chicken and rice"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View The Best Easy One Pot Chicken and Rice recipe">
+            <img class="recipes-item-image" src="./images/recipes/chicken-rice.jpg" alt="Chicken and rice">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -632,11 +612,9 @@
 
       <article class="recipes-item" data-id="creamy-chicken-pasta">
         <div class="recipes-item-image-wrapper">
-          <img
-            class="recipes-item-image"
-            src="./images/recipes/pasta.jpg"
-            alt="Creamy chicken and bacon pasta"
-          >
+          <a class="recipes-item-image-link" href="#" aria-label="View The Creamiest Creamy Chicken and Bacon Pasta recipe">
+            <img class="recipes-item-image" src="./images/recipes/pasta.jpg" alt="Creamy chicken and bacon pasta">
+          </a>
 
           <button
             class="recipes-item-favorite-btn"
@@ -696,7 +674,21 @@
     </div>
   </section>
 </main>
+<div class="scroll-to-top">
+  <button
+    class="button-scroll"
+    type="button"
+  >
+    <img
+      src="./images/icons/up-arrow.svg"
+      alt="up-arrow"
+      width="50"
+      height="50"
+    >
+  </button>
+</div>
 <script src="./js/favorite.js"></script>
 <script src="./js/burger-menu.js"></script>
+<script src="./js/scrollbtn.js"></script>
 </body>
 </html>

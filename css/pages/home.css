@@ -74,6 +74,10 @@
 .hero-author {
   display: flex;
   gap: 16px;
+  align-items: center;
+  color: var(--color-black);
+  border-radius: 30px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .hero-author-image {
@@ -158,8 +162,15 @@
 }
 
 .categories-item {
-  padding-inline: 40px;
   border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.categories-item-link {
+  display: block;
+  padding-inline: 40px;
+  color: var(--color-black);
+  border-radius: inherit;
 }
 
 .categories-item:nth-child(1) {
@@ -230,13 +241,20 @@
 
 .recipes-item-image-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.recipes-item-image-link {
+  display: block;
 }
 
 .recipes-item-image {
   display: block;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .recipes-item-favorite-btn {
@@ -253,6 +271,17 @@
   align-items: center;
   justify-content: center;
   transition: 0.2s ease;
+  z-index: 1;
+}
+
+.recipes-item-favorite-btn.is-animating {
+  animation: favorite-pop 0.35s ease;
+}
+
+@keyframes favorite-pop {
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .recipes-item-title {
@@ -347,6 +376,14 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.hero-author:focus-visible,
+.categories-item-link:focus-visible,
+.recipes-item-image-link:focus-visible,
+.recipes-item-favorite-btn:focus-visible {
+  outline: 3px solid #2e9fbd;
+  outline-offset: 4px;
+}
+
 .chef-section-visual {
   align-self: stretch;
   position: relative;
@@ -390,6 +427,26 @@
   bottom: 19%;
   left: 1%;
   width: 48px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.button-scroll {
+  display: none;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+.button-scroll.is-active {
+  display: block;
 }
 
 @media (max-width: 1120px) {
@@ -593,9 +650,31 @@
     transform: scale(1.1);
   }
 
+  .hero-author:hover {
+    transform: translateY(-2px);
+    opacity: 0.75;
+  }
+
+  .categories-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px var(--color-shadow-light);
+  }
+
+  .recipes-item-image-link:hover .recipes-item-image {
+    transform: scale(1.05);
+  }
+
+  .recipes-item-favorite-btn:hover {
+    transform: scale(1.1);
+  }
+
   .chef-section-button:hover {
     transform: translateY(-2px);
     background-color: var(--color-dark);
+  }
+
+  .button-scroll:hover {
+    border: 1px solid var(--color-black);
   }
 
 }
@@ -607,6 +686,14 @@
 
   .categories-btn:active {
     transform: scale(1.1);
+  }
+
+  .categories-item:active {
+    transform: translateY(-2px);
+  }
+
+  .recipes-item-favorite-btn:active {
+    transform: scale(0.95);
   }
 
   .chef-section-button:active {

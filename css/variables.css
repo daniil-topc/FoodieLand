@@ -37,7 +37,7 @@
   --bg-category-meat:      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(204, 38, 27, 0.08) 100%);
   --bg-category-dessert:   linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
   --bg-category-lunch:     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(222, 134, 38, 0.1) 100%);
-  --bg-category-chocolate: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  --bg-category-chocolate: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(109, 69, 37, 0.18) 100%);
 
   /* Состояния форм */
   --color-form-success: #dddddd;
