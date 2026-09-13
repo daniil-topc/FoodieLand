@@ -441,12 +441,71 @@
   border-radius: 50%;
   border: 1px solid var(--color-white);
   cursor: pointer;
-  background: transparent;
+  background: var(--color-white);
   transition: 0.3s ease;
 }
 
 .button-scroll.is-active {
   display: block;
+}
+
+.instagram-post {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #e7f9fd 100%);
+}
+
+.instagram-post-inner {
+  text-align: center;
+}
+
+.instagram-post-header {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.instagram-post-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 1.55rem + 2vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.instagram-post-header p {
+  margin: 24px 0 72px;
+  color: var(--color-gray);
+  line-height: 1.75;
+}
+
+.instagram-post-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+.instagram-post-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 64px;
+  padding: 18px 26px;
+  border-radius: 16px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.instagram-post-image {
+  transition: 0.3s;
+}
+
+.instagram-post-button img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
 }
 
 @media (max-width: 1120px) {
@@ -539,6 +598,12 @@
 
   .chef-section-ingredient--tomato {
     left: calc(50% - 270px);
+  }
+
+  .instagram-post-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 620px;
+    margin: 0 auto;
   }
 }
 
@@ -639,6 +704,30 @@
     left: calc(50% - 165px);
     width: 30px;
   }
+
+  .instagram-post {
+    padding: 64px 0;
+  }
+
+  .instagram-post-header p {
+    margin-bottom: 40px;
+  }
+
+  .instagram-post-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 18px;
+  }
+
+  .instagram-card-content {
+    min-height: 132px;
+  }
+
+  .instagram-post-button {
+    margin-top: 40px;
+  }
 }
 
 @media (hover: hover) {
@@ -673,6 +762,15 @@
     background-color: var(--color-dark);
   }
 
+  .instagram-post-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-dark);
+  }
+
+  .instagram-post-image:hover {
+    transform: translateY(-6px);
+  }
+
   .button-scroll:hover {
     border: 1px solid var(--color-black);
   }
@@ -698,6 +796,10 @@
 
   .chef-section-button:active {
     transform: translateY(-1px);
+  }
+
+  .instagram-post-image:active {
+    transform: translateY(-6px);
   }
 
 }
