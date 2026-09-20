@@ -13,6 +13,7 @@
   --color-gray: #707070;
 
   /* Текст */
+  --color-orange: #dc6601;
   --color-text-primary: #000000;
   --color-text-secondary: rgba(0, 0, 0, 0.6);
   --color-text-muted: rgba(0, 0, 0, 0.65);
