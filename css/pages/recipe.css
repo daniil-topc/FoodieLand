@@ -1,0 +1,25 @@
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 32px;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.button-scroll {
+	display: none;
+	border-radius: 50%;
+	border: 1px solid var(--color-white);
+	cursor: pointer;
+	background: var(--color-white);
+	transition: 0.3s ease;
+}
+
+.button-scroll.is-active {
+	display: block;
+}
