@@ -39,6 +39,7 @@
     href="./css/pages/home.css"
   />
   <title>Foodieland</title>
+  <link rel="stylesheet" href="./css/card-tilt.css">
 </head>
 <body>
 <header class="header">
@@ -151,10 +152,10 @@
     >
       <ul class="dropdown-menu-list">
         <li>
-          <a href="#">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="#">Recipes</a>
+          <a href="./recipe.html">Recipes</a>
         </li>
         <li>
           <a href="./blog.html">Blog</a>
@@ -261,31 +262,31 @@
     <div class="categories-footer">
       <ul class="categories-list">
         <li class="categories-item">
-          <a class="categories-item-link" href="#recipes" aria-label="View breakfast recipes">
+          <a class="categories-item-link" href="#recipe-strawberry-pancake" aria-label="View breakfast recipes">
             <img src="./images/icons/rice-icon.svg" alt="">
             <h3 class="categories-item-title">Breakfast</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-item-link" href="#recipes" aria-label="View vegan recipes">
+          <a class="categories-item-link" href="#recipe-firecracker-lettuce-wraps" aria-label="View vegan recipes">
             <img src="./images/icons/greens-icon.svg" alt="">
             <h3 class="categories-item-title">Vegan</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-item-link" href="#recipes" aria-label="View meat recipes">
+          <a class="categories-item-link" href="#recipe-wagyu-burger" aria-label="View meat recipes">
             <img src="./images/icons/meat-icon.svg" alt="">
             <h3 class="categories-item-title">Meat</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-item-link" href="#recipes" aria-label="View dessert recipes">
+          <a class="categories-item-link" href="#recipe-fruity-pancake" aria-label="View dessert recipes">
             <img src="./images/icons/dessert-icon.svg" alt="">
             <h3 class="categories-item-title">Dessert</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-item-link" href="#recipes" aria-label="View lunch recipes">
+          <a class="categories-item-link" href="#recipe-chicken-rice" aria-label="View lunch recipes">
             <img src="./images/icons/lunch-icon.svg" alt="">
             <h3 class="categories-item-title">Lunch</h3>
           </a>
@@ -313,7 +314,7 @@
     </div>
 
     <div class="recipes-grid">
-      <article class="recipes-item" data-id="wagyu-burger">
+      <article class="recipes-item" id="recipe-wagyu-burger" data-id="wagyu-burger">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Big and Juicy Wagyu Beef Cheeseburger recipe">
             <img class="recipes-item-image" src="./images/recipes/wagyu-burger.jpg" alt="Big and Juicy Wagyu Beef Cheeseburger">
@@ -399,7 +400,7 @@
       </article>
 
 
-      <article class="recipes-item" data-id="strawberry-pancake">
+      <article class="recipes-item" id="recipe-strawberry-pancake" data-id="strawberry-pancake">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Strawberry Oatmeal Pancake with Honey Syrup recipe">
             <img class="recipes-item-image" src="./images/recipes/pancake.jpg" alt="Pancake">
@@ -536,7 +537,7 @@
       </article>
 
 
-      <article class="recipes-item" data-id="fruity-pancake">
+      <article class="recipes-item" id="recipe-fruity-pancake" data-id="fruity-pancake">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Fruity Pancake with Orange and Blueberry recipe">
             <img class="recipes-item-image" src="./images/recipes/pancake-orange.jpg" alt="Fruity pancake with orange and blueberry">
@@ -575,7 +576,7 @@
       </article>
 
 
-      <article class="recipes-item" data-id="chicken-rice">
+      <article class="recipes-item" id="recipe-chicken-rice" data-id="chicken-rice">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View The Best Easy One Pot Chicken and Rice recipe">
             <img class="recipes-item-image" src="./images/recipes/chicken-rice.jpg" alt="Chicken and rice">
@@ -968,7 +969,7 @@
       </article>
       <article
         class="recipes-item try-recipes-card"
-        data-id="firecracker-lettuce-wraps"
+        id="recipe-firecracker-lettuce-wraps" data-id="firecracker-lettuce-wraps"
       >
         <div class="recipes-item-image-wrapper">
           <a
@@ -1130,5 +1131,6 @@
 <script src="./js/favorite.js"></script>
 <script src="./js/burger-menu.js"></script>
 <script src="./js/scrollbtn.js"></script>
+<script src="./js/card-tilt.js"></script>
 </body>
 </html>

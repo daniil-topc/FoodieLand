@@ -232,6 +232,11 @@
 }
 
 .button-scroll {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
   display: none;
   border: 1px solid var(--color-white);
   border-radius: 50%;
@@ -241,7 +246,13 @@
 }
 
 .button-scroll.is-active {
+  display: grid;
+}
+
+.button-scroll img {
   display: block;
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 1100px) {
@@ -279,4 +290,10 @@
 @media print {
   .recipe-hero-actions,
   .recipe-hero-play { display: none; }
+}
+
+@media (hover: hover) {
+  .button-scroll:hover {
+    border-color: var(--color-black);
+  }
 }
