@@ -149,8 +149,98 @@
   </div>
 </header>
 <main class="main container">
-  <section class="recipe-hero">
+  <section class="recipe-hero" aria-labelledby="recipe-title">
+    <div class="recipe-hero-header">
+      <div>
+        <h1 class="recipe-hero-title" id="recipe-title">Health Japanese Fried Rice</h1>
+        <div class="recipe-hero-meta">
+          <div class="recipe-hero-author">
+            <img src="./images/icons/author.jpg" alt="" width="50" height="50">
+            <div>
+              <strong>John Smith</strong>
+              <time datetime="2022-03-15">15 March 2022</time>
+            </div>
+          </div>
+          <div class="recipe-hero-meta-item">
+            <img src="./images/icons/timer.svg" alt="" width="24" height="24">
+            <div><strong>Prep time</strong><span>15 Minutes</span></div>
+          </div>
+          <div class="recipe-hero-meta-item">
+            <img src="./images/icons/timer.svg" alt="" width="24" height="24">
+            <div><strong>Cook time</strong><span>15 Minutes</span></div>
+          </div>
+          <div class="recipe-hero-meta-item recipe-hero-category">
+            <img src="./images/icons/fork-knife.svg" alt="" width="24" height="24">
+            <span>Chicken</span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-hero-actions">
+        <button class="recipe-hero-action" type="button" data-recipe-print>
+          <span class="recipe-hero-action-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            ><path
+              d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M7 14h10v7H7v-7Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /><circle
+              cx="17.5"
+              cy="11.5"
+              r=".9"
+              fill="currentColor"
+            /></svg>
+          </span>
+          <span>Print</span>
+        </button>
+        <button class="recipe-hero-action" type="button" data-recipe-share>
+          <span class="recipe-hero-action-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            ><path
+              d="M12 15V3m0 0L8 7m4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg>
+          </span>
+          <span data-share-label>Share</span>
+        </button>
+      </div>
+    </div>
 
+    <div class="recipe-hero-body">
+      <div class="recipe-hero-photo">
+        <img src="./images/recipes/recipe-hero.jpg" alt="Japanese fried rice with vegetables and soft-boiled eggs" width="840" height="600">
+        <span class="recipe-hero-play" aria-hidden="true"></span>
+      </div>
+      <aside class="recipe-hero-nutrition" aria-labelledby="nutrition-title">
+        <h2 id="nutrition-title">Nutrition Information</h2>
+        <dl>
+          <div><dt>Calories</dt><dd>219.9 kcal</dd></div>
+          <div><dt>Total Fat</dt><dd>10.7 g</dd></div>
+          <div><dt>Protein</dt><dd>7.9 g</dd></div>
+          <div><dt>Carbohydrate</dt><dd>22.3 g</dd></div>
+          <div><dt>Cholesterol</dt><dd>37.4 mg</dd></div>
+        </dl>
+        <p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+      </aside>
+    </div>
+
+    <p class="recipe-hero-description">
+      Fresh, comforting, and full of color, this Japanese-inspired fried rice
+      combines fluffy rice, tender vegetables, and soft-boiled eggs. It’s a
+      satisfying meal that comes together quickly, making it perfect for lunch
+      or a relaxed dinner. Finish with fresh herbs and a splash of soy sauce to
+      bring all the flavors together.
+    </p>
   </section>
 </main>
 <footer class="footer container">
@@ -220,5 +310,6 @@
 </div>
 <script src="./js/burger-menu.js"></script>
 <script src="./js/scrollbtn.js"></script>
+<script src="./js/recipe.js"></script>
 </body>
 </html>
