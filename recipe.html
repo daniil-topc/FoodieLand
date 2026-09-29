@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/card-tilt.css">
   <link rel="stylesheet" href="./css/pages/recipe.css">
   <title>Recipes</title>
 </head>
@@ -242,6 +243,236 @@
       bring all the flavors together.
     </p>
   </section>
+
+  <section class="recipe-content" aria-labelledby="ingredients-title">
+    <div class="ingredients">
+      <h2 id="ingredients-title">Ingredients</h2>
+
+      <fieldset class="ingredients-group">
+        <legend>For main dish</legend>
+        <label class="ingredient-item">
+          <input type="checkbox" checked>
+          <span>2 cups cooked jasmine rice</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>2 large eggs, softly boiled</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>1 cup fresh mixed vegetables</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>2 green onions, thinly sliced</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>1 tablespoon toasted sesame oil</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="ingredients-group">
+        <legend>For the sauce</legend>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>2 tablespoons light soy sauce</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>1 tablespoon sweet chili sauce</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span>1 teaspoon seasoned rice vinegar</span>
+        </label>
+      </fieldset>
+    </div>
+
+    <aside class="other-recipes" aria-labelledby="other-recipes-title">
+      <h2 id="other-recipes-title">Other Recipe</h2>
+      <div class="other-recipes-list">
+        <a class="other-recipe-card" href="#">
+          <img src="./images/recipes/meatballs.jpg" alt="Chicken meatballs with cream cheese" width="180" height="120">
+          <span class="other-recipe-copy">
+            <strong>Chicken Meatball with Creamy Cheese...</strong>
+            <span>By Andreas Paula</span>
+          </span>
+        </a>
+        <a class="other-recipe-card" href="#">
+          <img src="./images/recipes/pasta.jpg" alt="Creamy chicken and bacon pasta" width="180" height="120">
+          <span class="other-recipe-copy">
+            <strong>The Creamiest Creamy Chicken an...</strong>
+            <span>By Andreas Paula</span>
+          </span>
+        </a>
+        <a class="other-recipe-card" href="#">
+          <img src="./images/recipes/chicken-rice.jpg" alt="Chicken and rice" width="180" height="120">
+          <span class="other-recipe-copy">
+            <strong>The Best Easy One Pot Chicken and Rice</strong>
+            <span>By Andreas Paula</span>
+          </span>
+        </a>
+      </div>
+
+      <a class="other-recipes-poster" href="#" aria-label="Discover healthy food recipes">
+        <strong>Don’t forget to eat<br>healthy food</strong>
+        <span class="other-recipes-poster-art">
+          <img src="./images/recipes/01.svg" alt="Healthy salad with salmon" width="354" height="336">
+        </span>
+        <span>www.foodieland.com</span>
+      </a>
+    </aside>
+  </section>
+
+  <section class="directions" aria-labelledby="directions-title">
+    <h2 id="directions-title">Directions</h2>
+    <ol class="directions-list">
+      <li class="direction-step">
+        <article>
+          <div class="direction-step-heading">
+            <span class="direction-number" aria-hidden="true">1</span>
+            <h3>Prepare the rice and vegetables</h3>
+          </div>
+          <p>
+            Break up the chilled rice with your hands so every grain cooks evenly.
+            Slice the vegetables into small pieces and keep all the ingredients close
+            to the stove—the frying happens quickly.
+          </p>
+          <img
+            class="direction-image"
+            src="./images/recipes/directions-cooking.jpg"
+            alt="Woman cooking in a bright kitchen"
+            width="800"
+            height="547"
+          >
+          <p>
+            For the best texture, use rice that has cooled completely. Freshly cooked
+            rice contains more moisture and can become soft instead of lightly crisp.
+          </p>
+        </article>
+      </li>
+      <li class="direction-step">
+        <article>
+          <div class="direction-step-heading">
+            <span class="direction-number" aria-hidden="true">2</span>
+            <h3>Cook the eggs and aromatics</h3>
+          </div>
+          <p>
+            Warm the sesame oil in a large pan over medium-high heat. Add the green
+            onions and vegetables, then stir-fry until fragrant and just tender. Move
+            everything to one side and gently scramble the eggs in the open space.
+          </p>
+        </article>
+      </li>
+      <li class="direction-step">
+        <article>
+          <div class="direction-step-heading">
+            <span class="direction-number" aria-hidden="true">3</span>
+            <h3>Fry, season, and serve</h3>
+          </div>
+          <p>
+            Add the rice and toss it through the vegetables and eggs. Pour in the soy
+            sauce, sweet chili sauce, and rice vinegar. Fry for another two to three
+            minutes, then serve hot with fresh herbs and soft-boiled eggs.
+          </p>
+        </article>
+      </li>
+    </ol>
+  </section>
+
+  <section class="newsletter" aria-labelledby="newsletter-title">
+    <div class="newsletter-content">
+      <div class="newsletter-copy">
+        <h2 id="newsletter-title">Deliciousness to your inbox</h2>
+        <p>
+          Get fresh recipe inspiration, practical cooking tips, and seasonal
+          favorites delivered straight to your inbox every week.
+        </p>
+        <form class="newsletter-form" action="#" method="post">
+          <label class="visually-hidden" for="recipe-newsletter-email">Your email address</label>
+          <input
+            id="recipe-newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your email address..."
+            required
+            autocomplete="email"
+          >
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipe-recommendations" aria-labelledby="recommendations-title">
+    <h2 id="recommendations-title">You may like these recipe too</h2>
+    <div class="recommendations-grid">
+      <article class="recipes-item recipe-recommendation-card" data-id="tropical-fruit-salad">
+        <div class="recipes-item-image-wrapper">
+          <a class="recipes-item-image-link" href="#">
+            <img class="recipes-item-image" src="./images/recipes/mixed-tropical%20fruit-salad.jpg" alt="Mixed tropical fruit salad">
+          </a>
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="">
+          </button>
+        </div>
+        <h3 class="recipes-item-title"><a href="#">Mixed Tropical Fruit Salad with Superfood Boosts</a></h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Healthy</span>
+        </div>
+      </article>
+
+      <article class="recipes-item recipe-recommendation-card" data-id="wagyu-beef-cheeseburger">
+        <div class="recipes-item-image-wrapper">
+          <a class="recipes-item-image-link" href="#">
+            <img class="recipes-item-image" src="./images/recipes/Big-and-Juicy%20Wagyu-Beef%20Cheeseburger.jpg" alt="Big and juicy Wagyu beef cheeseburger">
+          </a>
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="">
+          </button>
+        </div>
+        <h3 class="recipes-item-title"><a href="#">Big and Juicy Wagyu Beef Cheeseburger</a></h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Western</span>
+        </div>
+      </article>
+
+      <article class="recipes-item recipe-recommendation-card" data-id="japanese-fried-rice">
+        <div class="recipes-item-image-wrapper">
+          <a class="recipes-item-image-link" href="./recipe.html">
+            <img class="recipes-item-image" src="./images/recipes/Japanese-Fried-Rice.jpg" alt="Healthy Japanese fried rice with asparagus">
+          </a>
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="">
+          </button>
+        </div>
+        <h3 class="recipes-item-title"><a href="./recipe.html">Healthy Japanese Fried Rice with Asparagus</a></h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Healthy</span>
+        </div>
+      </article>
+
+      <article class="recipes-item recipe-recommendation-card" data-id="vegetarian-taco">
+        <div class="recipes-item-image-wrapper">
+          <a class="recipes-item-image-link" href="#">
+            <img class="recipes-item-image" src="./images/recipes/Taco-Meat.jpg" alt="Cauliflower walnut vegetarian taco meat">
+          </a>
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="">
+          </button>
+        </div>
+        <h3 class="recipes-item-title"><a href="#">Cauliflower Walnut Vegetarian Taco Meat</a></h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Eastern</span>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
 <footer class="footer container">
   <div class="footer-header">
@@ -308,8 +539,10 @@
     >
   </button>
 </div>
+<script src="./js/favorite.js"></script>
 <script src="./js/burger-menu.js"></script>
 <script src="./js/scrollbtn.js"></script>
 <script src="./js/recipe.js"></script>
+<script src="./js/card-tilt.js"></script>
 </body>
 </html>

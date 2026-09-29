@@ -1,9 +1,9 @@
 (() => {
   const motion = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
 
-  document.querySelectorAll('.recipes-item, .recipes-item-poster').forEach((card) => {
+  document.querySelectorAll('.recipes-item, .recipes-item-poster, .hero-button').forEach((card) => {
     const area = document.createElement('div');
-    area.className = 't-tilt';
+    area.className = card.matches('.hero-button') ? 't-tilt t-tilt--button' : 't-tilt';
     card.before(area);
     area.append(card);
     card.classList.add('t-tilt-card');
