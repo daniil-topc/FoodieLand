@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>Blog</title>
+  <link
+    rel="stylesheet"
+    href="./css/normalize.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/font.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/variables.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/global.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/header.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/footer.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/pages/blog.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./css/card-tilt.css"
+  >
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a
+      class="header-logo"
+      href="./index.html"
+    >
+      <img
+        src="./images/logo/Foodieland-logo.svg"
+        alt="Foodieland"
+        width="108"
+        height="19"
+      />
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li>
+          <a
+            class="header-nav-link"
+            href="index.html"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./recipe.html"
+          >Recipes
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./blog.html"
+          >Blog
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./contact.html"
+          >Contact
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="#"
+          >About us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-soc1als">
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Facebook"
+      >
+        <img
+          src="./images/icons/facebook.svg"
+          alt=""
+          width="22"
+          height="18"
+        />
+      </a>
+
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Twitter"
+      >
+        <img
+          src="./images/icons/twitter.svg"
+          alt=""
+          width="22"
+          height="18"
+        />
+      </a>
+
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Instagram"
+      >
+        <img
+          src="./images/icons/instagram.svg"
+          alt=""
+          width="22"
+          height="18"
+        />
+      </a>
+    </div>
+    <button
+      class="header-burger"
+      type="button"
+      aria-label="Open Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Additional navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <section
+    class="blog-hero container"
+    aria-labelledby="blog-title"
+  >
+    <h1 id="blog-title">Blog &amp; Article</h1>
+    <p class="blog-hero-description">
+      Discover kitchen stories, practical cooking tips, and fresh ideas to make every meal a little more special.
+    </p>
+    <form
+      class="blog-search"
+      role="search"
+      action="./blog.html"
+      method="get"
+    >
+      <input
+        type="search"
+        name="q"
+        aria-label="Search articles, news or recipes"
+        placeholder="Search article, news or recipe..."
+      >
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  <section
+    class="blog-content container"
+    aria-label="Latest articles and tasty recipes"
+  >
+    <div class="blog-content-grid">
+      <div class="blog-articles">
+        <p class="blog-search-feedback" role="status" aria-live="polite" hidden></p>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-1.png"
+            alt="Crochet Projects for Noodle Lovers"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>Crochet Projects for Noodle Lovers</h2>
+            <p>A bowl of noodles, a handful of fresh herbs, and a little creativity. Find comforting ideas for your next cozy night in.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-1.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Wade Warren</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-2.png"
+            alt="10 Vegetarian Recipes To Eat This Month"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>10 Vegetarian Recipes To Eat This Month</h2>
+            <p>Bring more color to your table with seasonal vegetables, hearty grains, and ten satisfying meals worth making again.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-2.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Robert Fox</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-3.png"
+            alt="Full Guide to Becoming a Professional Chef"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>Full Guide to Becoming a Professional Chef</h2>
+            <p>From mastering knife skills to finding your rhythm in a busy kitchen, discover what it takes to turn cooking into a career.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-3.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Dianne Russell</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-4.png"
+            alt="Simple & Delicious Vegetarian Lasagna"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>Simple & Delicious Vegetarian Lasagna</h2>
+            <p>Layers of roasted vegetables, rich tomato sauce, and golden cheese make this meat-free lasagna a family favorite.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-4.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Leslie Alexander</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-5.png"
+            alt="Plantain and Pinto Stew with Aji Verde"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>Plantain and Pinto Stew with Aji Verde</h2>
+            <p>Sweet plantains meet tender pinto beans in a warming stew, finished with a bright, herby green sauce.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-5.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Courtney Henry</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <span class="blog-article-media">
+          <img
+            class="blog-article-image"
+            src="./images/blog/article-6.png"
+            alt="We&#8217;re Hiring a Communications Assistant!"
+            width="290"
+            height="200"
+            loading="lazy"
+          >
+          </span>
+          <div class="blog-article-content">
+            <h2>We&#8217;re Hiring a Communications Assistant!</h2>
+            <p>Love food and telling a good story? Help our team share kitchen inspiration and connect with the Foodieland community.</p>
+            <div class="blog-article-meta">
+              <span class="blog-article-author"><img
+                src="./images/blog/author-6.png"
+                alt=""
+                width="40"
+                height="40"
+                loading="lazy"
+              ><span>Albert Flores</span></span>
+              <time datetime="2021-11-12">12 November 2021</time>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside
+        class="blog-sidebar"
+        aria-labelledby="tasty-recipes-title"
+      >
+        <h2 id="tasty-recipes-title">Tasty Recipes</h2>
+        <div class="blog-tasty-list">
+          <article class="blog-tasty-card">
+            <span class="blog-tasty-media">
+            <img
+              src="./images/recipes/meatballs.jpg"
+              alt="Chicken meatballs with creamy cheese"
+              width="180"
+              height="120"
+              loading="lazy"
+            >
+            </span>
+            <div>
+              <h3>Chicken Meatballs with Creamy Cheese</h3>
+              <p>By Andreas Paula</p>
+            </div>
+          </article>
+          <article class="blog-tasty-card">
+            <span class="blog-tasty-media">
+            <img
+              src="./images/recipes/pasta.jpg"
+              alt="Traditional bolognaise ragu"
+              width="180"
+              height="120"
+              loading="lazy"
+            >
+            </span>
+            <div>
+              <h3>Traditional Bolognaise Ragu</h3>
+              <p>By Andreas Paula</p>
+            </div>
+          </article>
+          <article class="blog-tasty-card">
+            <span class="blog-tasty-media">
+            <img
+              src="./images/blog/dumplings.png"
+              alt="Pork and chive Chinese dumplings"
+              width="180"
+              height="120"
+              loading="lazy"
+            >
+            </span>
+            <div>
+              <h3>Pork and Chive Chinese Dumplings</h3>
+              <p>By Andreas Paula</p>
+            </div>
+          </article>
+        </div>
+        <a
+          class="blog-poster"
+          href="./recipe.html"
+          aria-label="Discover a healthy recipe"
+        >
+          <strong>Don&#8217;t forget to eat<br>healthy food</strong>
+          <span class="blog-poster-art"><img
+            src="./images/recipes/01.svg"
+            alt="Fresh salad with salmon"
+            width="354"
+            height="336"
+            loading="lazy"
+          ></span>
+          <span class="blog-poster-address">www.foodieland.com</span>
+        </a>
+      </aside>
+    </div>
+    <nav
+      class="blog-pagination"
+      aria-label="Article pages"
+    >
+      <span
+        aria-current="page"
+        aria-label="Page 1"
+      >1</span>
+      <button
+        type="button"
+        disabled
+        aria-label="Page 2 is not available yet"
+      >2
+      </button>
+      <button
+        type="button"
+        disabled
+        aria-label="Page 3 is not available yet"
+      >3
+      </button>
+      <button
+        type="button"
+        disabled
+        aria-label="Page 4 is not available yet"
+      >4
+      </button>
+      <button
+        type="button"
+        disabled
+        aria-label="Page 5 is not available yet"
+      >5
+      </button>
+      <span aria-hidden="true">…</span>
+      <button
+        type="button"
+        disabled
+        aria-label="Next page is not available yet"
+      >›
+      </button>
+    </nav>
+  </section>
+</main>
+<footer class="footer container">
+  <div class="footer-header">
+    <div class="footer-brand">
+      <a href="./index.html">
+        <img
+          src="./images/logo/Foodieland-logo.svg"
+          alt="FoodieLand."
+        >
+      </a>
+      <p class="footer-description">
+        Delicious and easy-to-follow recipes made for everyday cooking and
+        special occasions.
+      </p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="./recipe.html">Recipes</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      © 2020 Flowbase. Powered by <a href="#">Webflow</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="Facebook">
+        <img
+          src="./images/icons/facebook.svg"
+          alt=""
+        ></a>
+
+      <a href="#" aria-label="Twitter">
+        <img
+          src="./images/icons/twitter.svg"
+          alt=""
+        ></a>
+
+      <a href="#" aria-label="instagram">
+        <img
+          src="./images/icons/instagram.svg"
+          alt=""
+        ></a>
+    </div>
+  </div>
+</footer>
+<script src="./js/burger-menu.js"></script>
+<script src="./js/blog-search.js"></script>
+</body>
+</html>
