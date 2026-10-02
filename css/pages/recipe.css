@@ -481,7 +481,7 @@
   overflow: hidden;
   border-radius: 50px;
   background-color: var(--color-surface-blue);
-  background-image: url("../../images/newsletter/cta.png");
+  background-image: url("../../images/newsletter/cta.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

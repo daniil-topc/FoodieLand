@@ -214,11 +214,13 @@
         <a class="hero-author" href="#recipes" aria-label="View John Smith's recipes">
           <img
             class="hero-author-image"
-            src="./images/icons/author.jpg"
+            src="./images/icons/author.webp"
             alt="John Smith"
             width="50"
             height="50"
-          />
+            loading="eager"
+            decoding="async"
+          >
 
           <div class="author-info">
             <span class="author-name">John Smith</span>
@@ -242,9 +244,14 @@
     <div class="hero-image-wrapper">
       <img
         class="hero-image"
-        src="./images/logo/chicken-wings.jpg"
+        src="./images/logo/chicken-wings.webp"
         alt="Spicy chicken wings"
-      />
+        width="660"
+        height="640"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      >
     </div>
   </section>
   <section class="categories container">
@@ -263,37 +270,37 @@
       <ul class="categories-list">
         <li class="categories-item">
           <a class="categories-item-link" href="#recipe-strawberry-pancake" aria-label="View breakfast recipes">
-            <img src="./images/icons/rice-icon.svg" alt="">
+            <img src="./images/icons/rice-icon.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Breakfast</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-link" href="#recipe-firecracker-lettuce-wraps" aria-label="View vegan recipes">
-            <img src="./images/icons/greens-icon.svg" alt="">
+            <img src="./images/icons/greens-icon.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Vegan</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-link" href="#recipe-wagyu-burger" aria-label="View meat recipes">
-            <img src="./images/icons/meat-icon.svg" alt="">
+            <img src="./images/icons/meat-icon.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Meat</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-link" href="#recipe-fruity-pancake" aria-label="View dessert recipes">
-            <img src="./images/icons/dessert-icon.svg" alt="">
+            <img src="./images/icons/dessert-icon.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Dessert</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-link" href="#recipe-chicken-rice" aria-label="View lunch recipes">
-            <img src="./images/icons/lunch-icon.svg" alt="">
+            <img src="./images/icons/lunch-icon.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Lunch</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-link" href="#recipes" aria-label="View chocolate recipes">
-            <img src="./images/icons/chocolate-item.svg" alt="">
+            <img src="./images/icons/chocolate-item.svg" alt="" width="100" height="100" loading="lazy" decoding="async">
             <h3 class="categories-item-title">Chocolate</h3>
           </a>
         </li>
@@ -317,7 +324,7 @@
       <article class="recipes-item" id="recipe-wagyu-burger" data-id="wagyu-burger">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Big and Juicy Wagyu Beef Cheeseburger recipe">
-            <img class="recipes-item-image" src="./images/recipes/wagyu-burger.jpg" alt="Big and Juicy Wagyu Beef Cheeseburger">
+            <img class="recipes-item-image" src="./images/recipes/wagyu-burger.webp" alt="Big and Juicy Wagyu Beef Cheeseburger" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -362,8 +369,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/fresh-lime-roasted-salmon.jpg"
+              src="./images/recipes/fresh-lime-roasted-salmon.webp"
               alt="Fresh lime roasted salmon steak with rosemary and lemon slices"
+              width="368"
+              height="250"
+              loading="lazy"
+              decoding="async"
             >
           </a>
 
@@ -403,7 +414,7 @@
       <article class="recipes-item" id="recipe-strawberry-pancake" data-id="strawberry-pancake">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Strawberry Oatmeal Pancake with Honey Syrup recipe">
-            <img class="recipes-item-image" src="./images/recipes/pancake.jpg" alt="Pancake">
+            <img class="recipes-item-image" src="./images/recipes/pancake.webp" alt="Pancake" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -442,7 +453,7 @@
       <article class="recipes-item" data-id="mixed-mayonnaise-salad">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Fresh and Healthy Mixed Mayonnaise Salad recipe">
-            <img class="recipes-item-image" src="./images/recipes/salad.jpg" alt="Salad">
+            <img class="recipes-item-image" src="./images/recipes/salad.webp" alt="Salad" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -481,7 +492,7 @@
       <article class="recipes-item" data-id="chicken-meatballs">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Chicken Meatballs with Cream Cheese recipe">
-            <img class="recipes-item-image" src="./images/recipes/meatballs.jpg" alt="Meatballs">
+            <img class="recipes-item-image" src="./images/recipes/meatballs.webp" alt="Meatballs" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -540,7 +551,7 @@
       <article class="recipes-item" id="recipe-fruity-pancake" data-id="fruity-pancake">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View Fruity Pancake with Orange and Blueberry recipe">
-            <img class="recipes-item-image" src="./images/recipes/pancake-orange.jpg" alt="Fruity pancake with orange and blueberry">
+            <img class="recipes-item-image" src="./images/recipes/pancake-orange.webp" alt="Fruity pancake with orange and blueberry" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -579,7 +590,7 @@
       <article class="recipes-item" id="recipe-chicken-rice" data-id="chicken-rice">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View The Best Easy One Pot Chicken and Rice recipe">
-            <img class="recipes-item-image" src="./images/recipes/chicken-rice.jpg" alt="Chicken and rice">
+            <img class="recipes-item-image" src="./images/recipes/chicken-rice.webp" alt="Chicken and rice" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -618,7 +629,7 @@
       <article class="recipes-item" data-id="creamy-chicken-pasta">
         <div class="recipes-item-image-wrapper">
           <a class="recipes-item-image-link" href="#" aria-label="View The Creamiest Creamy Chicken and Bacon Pasta recipe">
-            <img class="recipes-item-image" src="./images/recipes/pasta.jpg" alt="Creamy chicken and bacon pasta">
+            <img class="recipes-item-image" src="./images/recipes/pasta.webp" alt="Creamy chicken and bacon pasta" width="368" height="250" loading="lazy" decoding="async">
           </a>
 
           <button
@@ -670,11 +681,11 @@
       </div>
 
       <div class="chef-section-visual" aria-hidden="true">
-        <img class="chef-section-chef" src="./images/chef/chef.png" alt="">
-        <img class="chef-section-ingredient chef-section-ingredient--meat" src="./images/chef/meat.png" alt="">
-        <img class="chef-section-ingredient chef-section-ingredient--vegetable" src="./images/chef/vegetable.png" alt="">
-        <img class="chef-section-ingredient chef-section-ingredient--onion" src="./images/chef/onion.png" alt="">
-        <img class="chef-section-ingredient chef-section-ingredient--tomato" src="./images/chef/tomato.png" alt="">
+        <img class="chef-section-chef" src="./images/chef/chef.webp" alt="" width="660" height="597" loading="lazy" decoding="async">
+        <img class="chef-section-ingredient chef-section-ingredient--meat" src="./images/chef/meat.webp" alt="" width="98" height="98" loading="lazy" decoding="async">
+        <img class="chef-section-ingredient chef-section-ingredient--vegetable" src="./images/chef/vegetable.webp" alt="" width="80" height="80" loading="lazy" decoding="async">
+        <img class="chef-section-ingredient chef-section-ingredient--onion" src="./images/chef/onion.webp" alt="" width="62" height="62" loading="lazy" decoding="async">
+        <img class="chef-section-ingredient chef-section-ingredient--tomato" src="./images/chef/tomato.webp" alt="" width="50" height="50" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -691,23 +702,39 @@
       <div class="instagram-post-grid">
         <img
           class="instagram-post-image"
-          src="./images/blog/Post1.jpg"
+          src="./images/blog/Post1.webp"
           alt="post Instagram"
+          width="290"
+          height="446"
+          loading="lazy"
+          decoding="async"
         >
         <img
           class="instagram-post-image"
-          src="./images/blog/Post2.jpg"
+          src="./images/blog/Post2.webp"
           alt="post Instagram"
+          width="290"
+          height="446"
+          loading="lazy"
+          decoding="async"
         >
         <img
           class="instagram-post-image"
-          src="./images/blog/Post3.jpg"
+          src="./images/blog/Post3.webp"
           alt="post Instagram"
+          width="290"
+          height="446"
+          loading="lazy"
+          decoding="async"
         >
         <img
           class="instagram-post-image"
-          src="./images/blog/Post4.jpg"
+          src="./images/blog/Post4.webp"
           alt="post Instagram"
+          width="290"
+          height="446"
+          loading="lazy"
+          decoding="async"
         >
       </div>
 
@@ -750,8 +777,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/mixed-tropical%20fruit-salad.jpg"
+              src="./images/recipes/mixed-tropical%20fruit-salad.webp"
               alt="Mixed tropical fruit salad"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -788,8 +819,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Big-and-Juicy%20Wagyu-Beef%20Cheeseburger.jpg"
+              src="./images/recipes/Big-and-Juicy%20Wagyu-Beef%20Cheeseburger.webp"
               alt="Big and juicy Wagyu beef cheeseburger"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -826,8 +861,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Japanese-Fried-Rice.jpg"
+              src="./images/recipes/Japanese-Fried-Rice.webp"
               alt="Healthy Japanese fried rice with asparagus"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -864,8 +903,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Taco-Meat.jpg"
+              src="./images/recipes/Taco-Meat.webp"
               alt="Cauliflower walnut vegetarian taco meat"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -902,8 +945,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Rainbow-Chicken-Salad.jpg"
+              src="./images/recipes/Rainbow-Chicken-Salad.webp"
               alt="Rainbow chicken salad with honey mustard dressing"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -940,8 +987,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/sandwiches-with-Chips.jpg"
+              src="./images/recipes/sandwiches-with-Chips.webp"
               alt="Barbeque spicy sandwiches with chips"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -978,8 +1029,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Firecracker-Vegan.jpg"
+              src="./images/recipes/Firecracker-Vegan.webp"
               alt="Firecracker vegan lettuce wraps"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -1016,8 +1071,12 @@
           >
             <img
               class="recipes-item-image"
-              src="./images/recipes/Chicken-Ramen.jpg"
+              src="./images/recipes/Chicken-Ramen.webp"
               alt="Chicken ramen soup with mushroom"
+              width="290"
+              height="200"
+              loading="lazy"
+              decoding="async"
             >
           </a>
           <button
@@ -1054,10 +1113,28 @@
           incididunt ut labore et dolore magna aliquat enim ad minim
         </p>
 
-        <form class="newsletter-form" action="#" method="post">
-          <label class="visually-hidden" for="newsletter-email">Your email address</label>
-          <input id="newsletter-email" name="email" type="email" placeholder="Your email address..." required aria-required="true" autocomplete="email">
-          <button type="submit">Subscribe</button>
+        <form
+          class="newsletter-form"
+          action="#"
+          method="post"
+        >
+          <label
+            class="visually-hidden"
+            for="newsletter-email"
+          >Your email address
+          </label>
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your email address..."
+            required
+            aria-required="true"
+            autocomplete="email"
+          >
+          <button type="submit">
+            Subscribe
+          </button>
         </form>
       </div>
     </div>
@@ -1095,23 +1172,35 @@
     </div>
 
     <div class="footer-socials">
-      <a href="#" aria-label="Facebook">
+      <a
+        href="#"
+        aria-label="Facebook"
+      >
         <img
           src="./images/icons/facebook.svg"
           alt=""
-        ></a>
+        >
+      </a>
 
-      <a href="#" aria-label="Twitter">
+      <a
+        href="#"
+        aria-label="Twitter"
+      >
         <img
           src="./images/icons/twitter.svg"
           alt=""
-        ></a>
+        >
+      </a>
 
-      <a href="#" aria-label="instagram">
+      <a
+        href="#"
+        aria-label="instagram"
+      >
         <img
           src="./images/icons/instagram.svg"
           alt=""
-        ></a>
+        >
+      </a>
     </div>
   </div>
 </footer>
