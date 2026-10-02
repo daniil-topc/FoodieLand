@@ -659,6 +659,12 @@
   color: #aaa;
 }
 
+.newsletter-form input:focus {
+  border-radius: 12px;
+  outline: 2px solid var(--color-black);
+  outline-offset: 2px;
+}
+
 .newsletter-form button {
   flex: 0 0 auto;
   min-width: 130px;
