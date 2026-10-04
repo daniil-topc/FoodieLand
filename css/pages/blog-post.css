@@ -1,0 +1,128 @@
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 32px;
+}
+
+.blog-post-hero {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 80px 80px 120px;
+  text-align: center;
+}
+
+.blog-post-hero h1 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.blog-post-hero-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  font-size: 16px;
+}
+
+.blog-post-hero-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-right: 40px;
+  font-weight: 700;
+}
+
+.blog-post-hero-author img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.blog-post-hero-meta time {
+  padding-left: 24px;
+  border-left: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.blog-post-hero-description {
+  max-width: 1050px;
+  margin: 48px auto 64px;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.blog-post-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1280 / 600;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+  .blog-post-hero {
+    padding-inline: 40px;
+  }
+
+  .blog-post-hero h1 {
+    font-size: clamp(44px, 5vw, 64px);
+  }
+}
+
+@media (max-width: 765px) {
+  .blog-post-hero {
+    padding: 56px 20px 80px;
+  }
+
+  .blog-post-hero h1 {
+    font-size: clamp(36px, 8vw, 52px);
+  }
+
+  .blog-post-hero-meta {
+    margin-top: 28px;
+  }
+
+  .blog-post-hero-author {
+    gap: 10px;
+    padding-right: 20px;
+  }
+
+  .blog-post-hero-meta time {
+    padding-left: 20px;
+  }
+
+  .blog-post-hero-description {
+    margin: 32px auto 40px;
+  }
+
+  .blog-post-hero-image {
+    aspect-ratio: 4 / 3;
+    border-radius: 20px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .blog-post-hero-meta {
+    font-size: 14px;
+  }
+
+  .blog-post-hero-author {
+    padding-right: 14px;
+  }
+
+  .blog-post-hero-meta time {
+    padding-left: 14px;
+  }
+}
