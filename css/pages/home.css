@@ -242,6 +242,8 @@
 .recipes-item-image-wrapper {
   position: relative;
   display: block;
+  width: 100%;
+  max-width: 368px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
@@ -254,6 +256,9 @@
 .recipes-item-image {
   display: block;
   width: 100%;
+  height: auto;
+  aspect-ratio: 368 / 250;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -867,6 +872,10 @@
 }
 
 @media (max-width: 480px) {
+  .recipes-grid .recipes-item-image {
+    aspect-ratio: 1;
+  }
+
   .categories-header {
     flex-direction: column;
     justify-content: center;
