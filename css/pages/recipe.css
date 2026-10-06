@@ -554,7 +554,7 @@
   font: inherit;
   font-size: 14px;
   font-weight: 700;
-  transition: transform .2s ease, background-color .2s ease;
+  transition: background-color .2s ease, transform .2s ease;
 }
 
 .visually-hidden {
@@ -745,6 +745,11 @@
 }
 
 @media (max-width: 480px) {
+  .newsletter-content {
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+
   .recipe-hero-title { font-size: 36px; }
   .recipe-hero-meta { gap: 20px 0; }
   .recipe-hero-author,
@@ -793,12 +798,24 @@
     transform: scale(1.05);
   }
 
-  .recipe-recommendation-card .recipes-item-favorite-btn:hover,
-  .newsletter-form button:hover {
+  .recipe-recommendation-card .recipes-item-favorite-btn:hover {
     transform: translateY(-2px);
   }
 
   .button-scroll:hover {
     border-color: var(--color-black);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .newsletter-form button:hover {
+    background-color: var(--color-dark);
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newsletter-form button {
+    transition: none;
   }
 }

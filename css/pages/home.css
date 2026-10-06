@@ -682,7 +682,7 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: background-color .2s ease, transform .2s ease;
 }
 
 .visually-hidden {
@@ -975,6 +975,8 @@
   .newsletter-content {
     min-height: 460px;
     border-radius: 30px;
+    background-position: center bottom;
+    background-size: 100% auto;
   }
 
   .newsletter-copy {
@@ -1038,11 +1040,6 @@
     background-color: var(--color-dark);
   }
 
-  .newsletter-form button:hover {
-    transform: translateY(-2px);
-    background-color: var(--color-dark);
-  }
-
   .instagram-post-image:hover {
     transform: translateY(-6px);
   }
@@ -1051,6 +1048,13 @@
     border: 1px solid var(--color-black);
   }
 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .newsletter-form button:hover {
+    background-color: var(--color-dark);
+    transform: translateY(-2px);
+  }
 }
 
 @media (hover:none) {
@@ -1097,5 +1101,9 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .newsletter-form button {
+    transition: none;
   }
 }
