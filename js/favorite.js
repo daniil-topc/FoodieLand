@@ -1,6 +1,14 @@
 const favoriteButtonElements =
     document.querySelectorAll('.recipes-item-favorite-btn')
 
+let favorites = JSON.parse(localStorage.getItem('favorites')) || []
+
+favorites = [...new Set(
+    favorites.map(id =>
+        id === 'wagyu-burger' ? 'wagyu-beef-cheeseburger' : id
+    )
+)]
+localStorage.setItem('favorites', JSON.stringify(favorites))
 
 favoriteButtonElements.forEach((button) => {
     button.addEventListener('click', () => {{
