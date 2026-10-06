@@ -1,7 +1,16 @@
 const favoriteButtonElements =
     document.querySelectorAll('.recipes-item-favorite-btn')
 
-let favorites = JSON.parse(localStorage.getItem('favorites')) || []
+function readFavorites() {
+    try {
+        const saved = JSON.parse(localStorage.getItem('favorites'))
+        return Array.isArray(saved) ? saved : []
+    } catch {
+        return []
+    }
+}
+
+let favorites = readFavorites()
 
 favorites = [...new Set(
     favorites.map(id =>
@@ -16,8 +25,7 @@ favoriteButtonElements.forEach((button) => {
         const recipeItem = button.closest('.recipes-item')
         const recipeId = recipeItem.dataset.id
 
-        let favorites =
-            JSON.parse(localStorage.getItem('favorites')) || []
+        let favorites = readFavorites()
 
         if (favorites.includes(recipeId)) {
             favorites = favorites.filter((id) => id !== recipeId)
@@ -42,7 +50,7 @@ favoriteButtonElements.forEach((button) => {
     }})
 })
 
-const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || []
+const savedFavorites = readFavorites()
 
 document.querySelectorAll('.recipes-item').forEach(recipe => {
     const recipeId = recipe.dataset.id
