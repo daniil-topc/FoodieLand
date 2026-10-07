@@ -37,6 +37,10 @@
   />
   <link
     rel="stylesheet"
+    href="./css/card-tilt.css"
+  />
+  <link
+    rel="stylesheet"
     href="./css/pages/contact.css"
   />
 </head>
@@ -213,8 +217,87 @@
       </form>
     </div>
   </section>
+  <section class="contact-newsletter" aria-labelledby="contact-newsletter-title">
+    <div class="contact-newsletter-content">
+      <div class="contact-newsletter-copy">
+        <h2 id="contact-newsletter-title">Deliciousness to your inbox</h2>
+        <p>
+          Get fresh recipes, practical cooking tips, and seasonal favorites
+          delivered straight to your inbox every week.
+        </p>
+        <form class="contact-newsletter-form" action="#" method="post">
+          <label class="visually-hidden" for="contact-newsletter-email">Your email address</label>
+          <input id="contact-newsletter-email" name="email" type="email" placeholder="Your email address..." autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-recipes" aria-labelledby="contact-recipes-title">
+    <h2 id="contact-recipes-title">Check out the delicious recipe</h2>
+    <div class="contact-recipes-grid">
+      <article class="recipes-item contact-recipe-card" data-id="tropical-fruit-salad">
+        <div class="recipes-item-image-wrapper">
+          <img class="recipes-item-image" src="./images/recipes/mixed-tropical%20fruit-salad.webp" alt="Mixed tropical fruit salad" width="290" height="200" loading="lazy" decoding="async">
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="" width="48" height="48">
+          </button>
+        </div>
+        <h3 class="recipes-item-title">Mixed Tropical Fruit Salad with Superfood Boosts</h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Healthy</span>
+        </div>
+      </article>
+
+      <article class="recipes-item contact-recipe-card" data-id="wagyu-beef-cheeseburger">
+        <div class="recipes-item-image-wrapper">
+          <img class="recipes-item-image" src="./images/recipes/Big-and-Juicy%20Wagyu-Beef%20Cheeseburger.webp" alt="Big and juicy Wagyu beef cheeseburger" width="290" height="200" loading="lazy" decoding="async">
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="" width="48" height="48">
+          </button>
+        </div>
+        <h3 class="recipes-item-title">Big and Juicy Wagyu Beef Cheeseburger</h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Western</span>
+        </div>
+      </article>
+
+      <article class="recipes-item contact-recipe-card" data-id="japanese-fried-rice">
+        <div class="recipes-item-image-wrapper">
+          <a class="recipes-item-image-link" href="./recipe.html" aria-label="View Healthy Japanese Fried Rice with Asparagus recipe">
+            <img class="recipes-item-image" src="./images/recipes/Japanese-Fried-Rice.webp" alt="Healthy Japanese fried rice with asparagus" width="290" height="200" loading="lazy" decoding="async">
+          </a>
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="" width="48" height="48">
+          </button>
+        </div>
+        <h3 class="recipes-item-title"><a href="./recipe.html">Healthy Japanese Fried Rice with Asparagus</a></h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Healthy</span>
+        </div>
+      </article>
+
+      <article class="recipes-item contact-recipe-card" data-id="vegetarian-taco">
+        <div class="recipes-item-image-wrapper">
+          <img class="recipes-item-image" src="./images/recipes/Taco-Meat.webp" alt="Cauliflower walnut vegetarian taco meat" width="290" height="200" loading="lazy" decoding="async">
+          <button class="recipes-item-favorite-btn" type="button" aria-label="Add to favorites">
+            <img class="recipes-item-favorite-img" src="./images/icons/heart-non-active.svg" alt="" width="48" height="48">
+          </button>
+        </div>
+        <h3 class="recipes-item-title">Cauliflower Walnut Vegetarian Taco Meat</h3>
+        <div class="recipes-item-meta">
+          <span class="recipes-item-badge"><img src="./images/icons/timer.svg" alt="">30 Minutes</span>
+          <span class="recipes-item-badge"><img src="./images/icons/fork-knife.svg" alt="">Eastern</span>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
-<footer class="footer container">
+<footer class="footer container contact-footer">
   <div class="footer-header">
     <div class="footer-brand">
       <a href="./index.html">
@@ -267,6 +350,8 @@
   </div>
 </footer>
 <script src="./js/burger-menu.js"></script>
+<script src="./js/favorite.js"></script>
+<script src="./js/card-tilt.js"></script>
 
 </body>
 </html>
