@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="description"
+    content="Get to know Foodieland: a place for approachable recipes, everyday cooking inspiration, and the joy of sharing good food."
+  >
+  <title>About us | Foodieland</title>
+  <link
+    rel="stylesheet"
+    href="./css/normalize.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/font.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/variables.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/global.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/header.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/footer.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./css/pages/about.css"
+  >
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a
+      class="header-logo"
+      href="./index.html"
+    >
+      <img
+        src="./images/logo/Foodieland-logo.svg"
+        alt="Foodieland"
+        width="108"
+        height="19"
+      >
+    </a>
+    <nav
+      class="header-nav"
+      aria-label="Main navigation"
+    >
+      <ul class="header-nav-list">
+        <li>
+          <a
+            class="header-nav-link"
+            href="./index.html"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./recipe.html"
+          >Recipes
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./blog.html"
+          >Blog
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./contact.html"
+          >Contact
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-nav-link"
+            href="./about.html"
+            aria-current="page"
+          >About us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-soc1als">
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Facebook"
+      >
+        <img
+          src="./images/icons/facebook.svg"
+          alt=""
+          width="22"
+          height="18"
+        >
+      </a>
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Twitter"
+      >
+        <img
+          src="./images/icons/twitter.svg"
+          alt=""
+          width="22"
+          height="18"
+        >
+      </a>
+      <a
+        class="header-soc1als-link"
+        href="#"
+        aria-label="Instagram"
+      >
+        <img
+          src="./images/icons/instagram.svg"
+          alt=""
+          width="22"
+          height="18"
+        >
+      </a>
+    </div>
+    <button
+      class="header-burger"
+      type="button"
+      aria-label="Open Menu"
+      aria-controls="site-dropdown-menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Additional navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a
+            href="./about.html"
+            aria-current="page"
+          >About us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section
+    class="about-hero about-container"
+    aria-labelledby="about-title"
+  >
+    <div class="about-hero-copy">
+      <span class="about-eyebrow">About Foodieland</span>
+      <h1 id="about-title">Good food begins with curiosity.</h1>
+      <p>We believe cooking feels better when there’s room to explore. Find approachable recipes, fresh ideas, and the confidence to make every meal your own.</p>
+      <div class="about-actions">
+        <a
+          class="about-button about-button--dark"
+          href="./recipe.html"
+        >Explore recipes <span aria-hidden="true">↗</span></a>
+        <a
+          class="about-text-link"
+          href="./blog.html"
+        >Read our stories <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="about-hero-visual">
+      <img
+        src="./images/blog/home-cooking.webp"
+        alt="Home cook preparing a meal in her kitchen"
+        width="1200"
+        height="800"
+        fetchpriority="high"
+        decoding="async"
+      >
+      <span class="about-hero-note">A little joy in every dish.</span>
+    </div>
+  </section>
+
+  <section
+    class="about-story about-container"
+    aria-labelledby="about-story-title"
+  >
+    <div class="about-story-visual">
+      <img
+        src="./images/recipes/recipe-hero.webp"
+        alt="Japanese fried rice with vegetables and eggs"
+        width="1680"
+        height="1125"
+        loading="lazy"
+        decoding="async"
+      >
+    </div>
+    <div class="about-story-copy">
+      <span class="about-eyebrow">Our approach</span>
+      <h2 id="about-story-title">Recipes for the way we really cook.</h2>
+      <p>Some days call for a quick favorite. Others invite you to try an ingredient you’ve never used before. Foodieland brings both kinds of inspiration together, with recipes you can return to and ideas worth experimenting with.</p>
+      <p>Start with a recipe, follow your appetite, and enjoy what happens along the way.</p>
+      <a
+        class="about-text-link"
+        href="./recipe.html"
+      >Find something delicious <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section
+    class="about-values about-container"
+    aria-labelledby="about-values-title"
+  >
+    <div class="about-section-heading">
+      <span class="about-eyebrow">What matters to us</span>
+      <h2 id="about-values-title">Make it good. Make it yours.</h2>
+      <p>There is no single right way to enjoy food. These ideas guide everything you’ll find here.</p>
+    </div>
+    <div class="about-values-grid">
+      <article class="about-value">
+        <span class="about-value-number">01</span>
+        <h3>Keep it approachable</h3>
+        <p>Clear steps and familiar ingredients help you spend less time guessing and more time cooking.</p>
+      </article>
+      <article class="about-value">
+        <span class="about-value-number">02</span>
+        <h3>Stay curious</h3>
+        <p>Try a new flavor, change a topping, or put your own spin on a favorite.</p>
+      </article>
+      <article class="about-value">
+        <span class="about-value-number">03</span>
+        <h3>Share the joy</h3>
+        <p>The best meals are often the ones we make and enjoy with other people.</p>
+      </article>
+    </div>
+  </section>
+
+  <section
+    class="about-invitation about-container"
+    aria-labelledby="about-invitation-title"
+  >
+    <div class="about-invitation-copy">
+      <span class="about-eyebrow">Stay a while</span>
+      <h2 id="about-invitation-title">Your next favorite meal starts here.</h2>
+      <p>Browse the recipes, pick what sounds good, and make a little space for something delicious today.</p>
+      <a
+        class="about-button about-button--dark"
+        href="./recipe.html"
+      >Start cooking <span aria-hidden="true">↗</span></a>
+    </div>
+    <img
+      src="./images/chef/chef.webp"
+      alt="Chef holding a freshly prepared dish"
+      width="660"
+      height="597"
+      loading="lazy"
+      decoding="async"
+    >
+  </section>
+</main>
+
+<footer class="footer container about-footer">
+  <div class="footer-header">
+    <div class="footer-brand">
+      <a href="./index.html">
+        <img
+          src="./images/logo/Foodieland-logo.svg"
+          alt="Foodieland"
+          width="108"
+          height="19"
+        >
+      </a>
+      <p class="footer-description">Delicious and easy-to-follow recipes made for everyday cooking and special occasions.</p>
+    </div>
+    <nav
+      class="footer-nav"
+      aria-label="Footer navigation"
+    >
+      <ul>
+        <li>
+          <a href="./recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a
+            href="./about.html"
+            aria-current="page"
+          >About us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <div class="footer-copyright">© 2020 Flowbase. Powered by
+      <a href="#">Webflow</a>
+    </div>
+    <div class="footer-socials">
+      <a
+        href="#"
+        aria-label="Facebook"
+      >
+        <img
+          src="./images/icons/facebook.svg"
+          alt=""
+        >
+      </a>
+      <a
+        href="#"
+        aria-label="Twitter"
+      >
+        <img
+          src="./images/icons/twitter.svg"
+          alt=""
+        >
+      </a>
+      <a
+        href="#"
+        aria-label="Instagram"
+      >
+        <img
+          src="./images/icons/instagram.svg"
+          alt=""
+        >
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="./js/burger-menu.js"></script>
+</body>
+</html>
